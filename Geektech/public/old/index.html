@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geektech – Juegos</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header removed for dynamic injection via JS -->
+
+    <!-- Hero Banner Antigravity -->
+    <section class="hero antigravity-hero" role="banner" aria-label="Destacado">
+        <img src="img/principal/banner.svg" class="hero-bg-image" alt="Banner Geektech">
+        <div class="hero-bg-effects">
+            <div class="glow-orb orb-1"></div>
+            <div class="glow-orb orb-2"></div>
+        </div>
+
+        <div class="hero-content">
+
+            <h1>Productos Digitales <br><span class="text-gradient">Sin Límites</span></h1>
+            <p>Eleva tu experiencia gamer con nuestra selección premium de software y complementos.</p>
+            <div class="hero-actions">
+                <a href="tienda.html" class="btn-hero primary-glow">Ver Productos</a>
+            </div>
+        </div>
+
+        <div class="hero-visuals">
+            <!-- Abstract 3D shapes or floating UI elements could go here, managed by CSS -->
+            <div class="floating-card glass-card">
+                <div class="icon-box">🚀</div>
+                <span>Rapido</span>
+            </div>
+            <div class="floating-card glass-card delayed">
+                <div class="icon-box">⚡</div>
+                <span>Entrega Inmediata</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <div class="container">
+
+        <!-- Sidebar / Filtros -->
+        <aside role="complementary" aria-label="Filtros">
+            <div class="filter-group">
+                <h3>Plataforma</h3>
+                <select id="platform" class="filter-control">
+                    <option value="all">Todas las plataformas</option>
+                    <option value="pc">PC / Steam</option>
+                    <option value="xbox">Xbox</option>
+                    <option value="ps">PlayStation</option>
+                    <option value="mobile">Móvil</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <h3>Género</h3>
+                <select id="genre" class="filter-control">
+                    <option value="all">Todos los géneros</option>
+                    <option value="action">Acción</option>
+                    <option value="rpg">Rol (RPG)</option>
+                    <option value="shooter">Shooter</option>
+                    <option value="sports">Deportes</option>
+                </select>
+            </div>
+        </aside>
+
+        <!-- Grid de Juegos -->
+        <main role="main">
+            <div class="view-toggle extra-spacing">
+                <button class="btn-view active" id="viewGrid" aria-label="Vista Cuadrícula">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                </button>
+                <button class="btn-view" id="viewList" aria-label="Vista Lista">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="8" y1="6" x2="21" y2="6"></line>
+                        <line x1="8" y1="12" x2="21" y2="12"></line>
+                        <line x1="8" y1="18" x2="21" y2="18"></line>
+                        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <section class="games-grid" id="gameGrid" aria-live="polite">
+                <!-- Cards generadas por JS -->
+                <p style="color:var(--text-muted)">Cargando juegos...</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer removed for dynamic injection via JS -->
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Scripts -->
+    <script type="module" src="js/page_games.js"></script>
+</body>
+
+</html>

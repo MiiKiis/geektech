@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geektech – Digitales</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header removed for dynamic injection via JS -->
+
+    <!-- Hero Banner Antigravity -->
+    <!-- Hero Banner removed as requested -->
+    <div style="margin-top: calc(var(--header-height) + 2rem);"></div>
+
+    <!-- Contenido Principal -->
+    <div class="container">
+
+        <!-- Sidebar / Filtros -->
+        <aside role="complementary" aria-label="Filtros">
+            <div class="filter-group">
+                <h3>Categoría</h3>
+                <select id="category" class="filter-control">
+                    <option value="all">Todas las categorías</option>
+                    <option value="teclados">Teclados</option>
+                    <option value="mouse">Mouse</option>
+                    <option value="audifonos">Audífonos</option>
+                    <option value="gabinetes">Gabinetes</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+        </aside>
+        <!-- Grid de Juegos -->
+        <main role="main">
+            <div class="view-toggle">
+                <button class="btn-view active" id="viewGrid" aria-label="Vista Cuadrícula">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                </button>
+                <button class="btn-view" id="viewList" aria-label="Vista Lista">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="8" y1="6" x2="21" y2="6"></line>
+                        <line x1="8" y1="12" x2="21" y2="12"></line>
+                        <line x1="8" y1="18" x2="21" y2="18"></line>
+                        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <section class="games-grid home-grid" id="gameGrid" aria-live="polite">
+                <!-- Cards generadas por JS -->
+                <p style="color:var(--text-muted)">Cargando juegos...</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer removed for dynamic injection via JS -->
+
+
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Scripts -->
+    <script type="module" src="js/inicio.js"></script>
+</body>
+
+</html>
