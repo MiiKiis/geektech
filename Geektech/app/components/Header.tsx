@@ -60,7 +60,7 @@ export default function Header() {
 
                     <div className="chat-options-group" style={{ display: 'flex', gap: '10px' }} suppressHydrationWarning>
                         <a
-                            href="https://.gg/4fHXqb5rtF"
+                            href="https://discord.gg/HknwKTmkVC"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="chat-option "
@@ -89,3 +89,4 @@ export default function Header() {
         </header>
     );
 }
+
